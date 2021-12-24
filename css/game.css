@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#display{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+#game
+{
+    width: 1000px;
+    height: 400px;
+    border: 1px solid black;
+}
+#character{
+    width: 40px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 300px;
+}
+#cactus {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    position: relative;
+    top: 260px;
+    left: 960px;
+    animation: block 3s infinite linear;
+}
+.make-it-jump {
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0% { top: 300px; }  
+    30% { top: 200px; }
+    70% { top: 200px; }
+    100% { top: 300px; }
+}
+
+@keyframes block {
+    0% { left: 960px; }
+    100% { left: 0px; }
+}
